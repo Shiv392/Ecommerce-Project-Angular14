@@ -1,0 +1,17 @@
+<header>
+    <div class="navbar navbar-dark bg-primary shadow-sm">
+        <div class="navbar-brand d-flex align-items-center" style="font-size: 40px;">
+            <i class="fas fa-shipping-fast"></i>&nbsp;
+            <strong>Flipkart</strong>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="searchvalue" (keyup)="search($event)" class="form-control" placeholder="Search Your Products Here">
+            </div>
+            <span class="fa fa-search" aria-hidden="true"></span>
+            </div>
+            <div class="badge-container d-flex justify-content-center align-items-center">
+            <button class="btn btn-primary" routerLink="/cart"><i class="fa-solid fa-cart-shopping" style="font-size: 30px;"></i></button>
+            <div class="badge bg-danger">{{totalitem}}</div>
+        </div>
+    </div>
+  
+  </header>
